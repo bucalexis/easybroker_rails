@@ -1,6 +1,6 @@
 # README
 
-This is an small Ruby on Rails project using the EasyBroker API.
+This is an small Ruby on Rails project using the EasyBroker API and some tailwind css classes.
 It shows a page using the first results obtained fetching EasyBroker properties from thei staging API
 
 To run this project follow this steps:
