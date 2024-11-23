@@ -1,0 +1,31 @@
+<!-- component -->
+
+<div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 w-full">
+    <% @properties.each do |property| %>
+        <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+            <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
+                <img
+                    src="<%= property['title_image_full'] %>"
+                    alt="property-image" class="object-cover w-full h-full" />
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                    <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                        <%= property['title'] %>
+                        
+                    </p>
+                    <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                        <%= number_to_currency(property['operations'][0]['amount']) %>
+                    </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-medium leading-relaxed text-blue-gray-900">
+                    <svg class="h-8 w-8 text-red-500 inline"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                     <%= property['location'] %>
+                </p>
+            </div>
+        </div>
+    <% end %>
+</div>
