@@ -10,9 +10,7 @@ bundle install
 ./bin/dev
 ```
 
-There are two very basic tests over the api
-They are located in the file 
-
+There are two very basic tests over the api.
 
 To run them execute the command
 ```
