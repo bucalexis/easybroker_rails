@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an small Ruby on Rails project using the EasyBroker API.
+It shows a page using the first results obtained fetching EasyBroker properties from thei staging API
 
-Things you may want to cover:
+To run this project follow this steps:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* bundle install
+* ./bin/dev
+* bin/rails server
