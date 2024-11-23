@@ -5,6 +5,16 @@ It shows a page using the first results obtained fetching EasyBroker properties 
 
 To run this project follow this steps:
 
-* bundle install
-* ./bin/dev
-* bin/rails server
+```
+bundle install
+./bin/dev
+```
+
+There are two very basic tests over the api
+They are located in the file 
+
+
+To run them execute the command
+```
+bin/rails test test/controllers/properties_controller_test.rb
+```
